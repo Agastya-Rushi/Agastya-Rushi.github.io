@@ -18,6 +18,8 @@ body{
 
 .logo{
   border-right: 1px solid black;
+  height: 85px;
+  width: 20%;
 }
 
 .hero img{
