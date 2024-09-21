@@ -1,4 +1,5 @@
-*{
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,38 +50,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-
-
-
-.hero {
-    background-color: #4CAF50; 
-    height: 300px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.hero-text {
-    color: white; 
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 8px; 
-}
-
-.hero-text h1 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.hero-text p {
-    font-size: 1rem;
-}
-
-
 .hero {
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
     text-align: center;
@@ -88,6 +57,9 @@ nav ul li a {
     color: white;
 }
 
+.hero-text h1 {
+    font-size: 2.5rem;
+}
 
 .hero-text h2 {
     font-size: 1.5rem;
@@ -100,9 +72,6 @@ nav ul li a {
     border-radius: 50%;
     margin-top: 20px;
 }
-
-
-
 
 section {
     padding: 40px 20px;
