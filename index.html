@@ -3,75 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Palepu Mangaraju, a hardware design engineer with expertise in EMI/EMC testing, PCB design, and hardware validation.">
     <title>Palepu Mangaraju - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <img src="images/logo.png" alt="Portfolio Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="Portfolio Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-text">
             <h1>Palepu Mangaraju</h1>
             <h2>Hardware Design Engineer</h2>
-            <p>Expert in hardware design, schematic entry, BOM generation, EMI/EMC testing, and PCB design.</p>
+            <p>Specializing in schematic design, EMI/EMC testing, and PCB layout.</p>
         </div>
         <img src="images/profile-image.jpg" alt="Palepu Mangaraju">
     </section>
 
     <section id="experience" class="experience">
-        <h2>Experience</h2>
         <div class="container">
+            <h2>Experience</h2>
             <div class="job">
                 <h3>Wipro Ltd., Bengaluru (Feb 2022 - Present)</h3>
                 <p><strong>Hardware Design Engineer</strong></p>
                 <ul>
-                    <li>Schematic entry, BOM generation, and component selection.</li>
-                    <li>Expertise in EMI/EMC testing (CISPR, FCC, IEC standards).</li>
-                    <li>Proficient in Cadence, Allegro, Eagle, Proteus, LTSpice for PCB design.</li>
-                    <li>Board bring-up, power budget calculation, and component testing.</li>
-                    <li>Collaboration with cross-functional teams for power qualification and thermal testing.</li>
+                    <li>Proficient in schematic entry, BOM generation, and component selection.</li>
+                    <li>Conduct EMI/EMC testing per CISPR, FCC, and IEC standards.</li>
+                    <li>Expert in Cadence, Allegro, Eagle, Proteus, and LTSpice for PCB design and simulation.</li>
+                    <li>Worked on power budget calculation, functional block verification, and component qualification.</li>
+                    <li>Extensive collaboration with cross-functional teams for power qualification, thermal testing, and board bring-up.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>EMI/EMC Testing Engineer</h3>
+                <ul>
+                    <li>Experience with RE/RS/CE/CS, ESD, and EFT tests for electronic systems.</li>
+                    <li>Skilled in identifying radiation sources using near-field probing and debugging EMI issues in high-speed designs.</li>
+                    <li>Expert in Rohde & Schwarz EMC32, TDK automation software, and Tektronix MSO Oscilloscopes.</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2>Projects</h2>
         <div class="container">
+            <h2>Projects</h2>
             <div class="project">
                 <h3>Abandoned Object Detection</h3>
-                <p>Developed a MATLAB-based solution to detect stationary objects using image subtraction and blob analysis.</p>
+                <p>Developed a MATLAB-based detection system using image subtraction and blob analysis.</p>
             </div>
             <div class="project">
                 <h3>Urban Link and Coverage Analysis</h3>
-                <p>Used ray tracing techniques for analyzing links in non-line-of-sight conditions with 3D building data.</p>
+                <p>Performed urban link analysis using ray tracing for non-line-of-sight communication systems.</p>
             </div>
             <div class="project">
-                <h3>Farm-Bot Using ESP-32</h3>
-                <p>Designed a smart farm automation system using ESP-32 and Blynk for remote monitoring and control.</p>
+                <h3>Farm-Bot using ESP-32</h3>
+                <p>Designed a farm automation bot using ESP-32 and Blynk for remote monitoring.</p>
             </div>
         </div>
     </section>
 
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Hardware Design: Cadence Allegro, Eagle, Proteus, LTSpice</li>
+                <li>Testing Tools: Tektronix MSO Oscilloscopes, Rohde & Schwarz EMC32</li>
+                <li>Programming: MATLAB, C/C++, Python, Embedded C (Arduino)</li>
+                <li>Standards: EMI/EMC Testing (CISPR, FCC, IEC), DO-254, MIL-STD-461</li>
+                <li>Communication Interfaces: RS232, PCIe, UART, I2C, I2S, USB, CAN</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mangarajupalepu@gamil.com">mangarajupalepu@gmail.com</a></p>
-        <p>Location: Rajahmundry, Andhra Pradesh, India</p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:mangaraju@example.com">mangaraju@example.com</a></p>
+            <p>Location: Rajahmundry, Andhra Pradesh, India</p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Palepu Mangaraju - All Rights Reserved</p>
+        <div class="container">
+            <p>© 2024 Palepu Mangaraju - All Rights Reserved</p>
+        </div>
     </footer>
+
 </body>
 </html>
