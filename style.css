@@ -49,27 +49,27 @@ nav ul li a {
     font-weight: bold;
 }
 
+/*
 
-/* Styling for the hero section */
+
 .hero {
-    background-color: #4CAF50; /* A subtle green background for the hero section */
-    height: 300px; /* Adjust the height of the hero section */
+    background-color: #4CAF50; 
+    height: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Styling for the hero-text */
+
 .hero-text {
-    color: white; /* White text for better contrast */
+    color: white; 
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background to enhance readability */
-    border-radius: 8px; /* Smooth rounded edges */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; 
 }
 
-/* Additional styles for better appearance */
 .hero-text h1 {
     margin-bottom: 10px;
     font-size: 2rem;
@@ -80,7 +80,7 @@ nav ul li a {
     font-size: 1rem;
 }
 
-/* original hero section */
+
 .hero {
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
     text-align: center;
@@ -101,7 +101,8 @@ nav ul li a {
     margin-top: 20px;
 }
 
-/* till here hero section */
+
+*/
 
 section {
     padding: 40px 20px;
