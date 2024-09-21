@@ -1,31 +1,171 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 header {
     background-color: #333;
-    color: white;
-    padding: 15px 0;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-header img {
-    max-height: 60px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+
+
+.hero {
+    background-color: #4CAF50; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-text {
+    color: white; 
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; 
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+*/
+
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.job, .project, .skills {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: disc;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* ########################################################### for Learn Page ##################################################### */
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
@@ -35,81 +175,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-/* About Section */
-.about {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.about p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Projects Section */
-.projects {
-    padding: 50px 20px;
-    background-color: #fafafa;
-    text-align: center;
-}
-
-.projects h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.projects .project-card {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.projects .project-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.projects .project-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Learn Page */
-.learn-page {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
+/* Styling for Coming Soon poster */
 .coming-soon {
     display: flex;
     flex-direction: column;
@@ -117,6 +183,8 @@ nav ul li a {
     align-items: center;
     height: 300px;
     background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
 }
 
 .coming-soon h2 {
@@ -138,122 +206,18 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
-.contact {
-    padding: 50px 20px;
+/* Styling for sections like Contact */
+section {
+    padding: 20px;
     text-align: center;
-    background-color: #fafafa;
 }
 
-.contact h2 {
+h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
 }
 
-.contact p {
+p {
     font-size: 1rem;
     color: #666;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-/* Responsive Media Queries */
-
-/* For tablets and smaller screens */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .hero-text {
-        font-size: 1.8rem;
-    }
-
-    .about h2,
-    .projects h2,
-    .contact h2 {
-        font-size: 1.8rem;
-    }
-
-    .about p,
-    .projects .project-card p,
-    .contact p {
-        font-size: 0.95rem;
-    }
-
-    .projects .project-card {
-        margin: 20px 0;
-    }
-
-    .coming-soon h2 {
-        font-size: 2rem;
-    }
-
-    .coming-soon p {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
-
-/* For small mobile screens (max-width: 600px) */
-@media (max-width: 600px) {
-    header {
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .hero {
-        height: 250px;
-    }
-
-    .hero-text {
-        font-size: 1.5rem;
-    }
-
-    .about h2,
-    .projects h2,
-    .contact h2 {
-        font-size: 1.5rem;
-    }
-
-    .about p,
-    .projects .project-card p,
-    .contact p {
-        font-size: 0.9rem;
-    }
-
-    .projects .project-card {
-        margin: 15px 0;
-    }
-
-    .coming-soon h2 {
-        font-size: 1.5rem;
-    }
-
-    .coming-soon p {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
 }
