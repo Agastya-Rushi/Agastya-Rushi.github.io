@@ -1,76 +1,77 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Mangaraju_Palepu_Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palepu Mangaraju - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="AirC&amp;C is the premiere site renting cute cats and canines">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body> 
-
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet'>
+</head>
+<body>
     <header>
-      <img src="images/logo.png" alt="AirCnC Logo" class="logo">
-       <div class ="tabs">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-       </div>
+        <img src="images/logo.png" alt="Portfolio Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="hero">
-      <img src="images/dog-hero-image.png" alt="Terry Golden Retriever">
-    </div>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Palepu Mangaraju</h1>
+            <h2>Hardware Design Engineer</h2>
+            <p>Expert in hardware design, schematic entry, BOM generation, EMI/EMC testing, and PCB design.</p>
+        </div>
+        <img src="images/profile-image.jpg" alt="Palepu Mangaraju">
+    </section>
 
-    <section class =" clearfix info">
-      <div class ="container">
-
-        <div class ="profile column ">
-          <div class ="owner-profile column">
-            <img src="images/raju.png" alt ="Owner image">
-            <h2 class ="relationship">Owner</h2>
-            <h2 class = "name">karikaaludu</h2>
-
-
-          </div><!-- .owner-profile -->
-
-          <div class =" clearfix pet-details column">
-            <h1>Mangaraju Palepu</h1>
-            <p class ="location">Rajahmundry, AP, IN</p>
-            <div class ="icon column">
-              <div class ="clearfix icons">
-                <img src="images/icons/mute.svg" alt ="Doesn't bark">
-                <h5>Doesn't Bark</h5>
-              </div><!-- .icon -->
-
-              <div class ="clearfix icons">
-                <img src="images/icons/baby.svg" alt ="Kid friendly">
-                <h5>Kid Friendly</h5>
-              </div> <!-- .icon --> 
-
-              <div class ="clearfix icons">
-                <img src="images/icons/lightning.svg" alt ="Enegytic">
-                <h5>Enegytic</h5>
-              </div><!-- .icon -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="container">
+            <div class="job">
+                <h3>Wipro Ltd., Bengaluru (Feb 2022 - Present)</h3>
+                <p><strong>Hardware Design Engineer</strong></p>
+                <ul>
+                    <li>Schematic entry, BOM generation, and component selection.</li>
+                    <li>Expertise in EMI/EMC testing (CISPR, FCC, IEC standards).</li>
+                    <li>Proficient in Cadence, Allegro, Eagle, Proteus, LTSpice for PCB design.</li>
+                    <li>Board bring-up, power budget calculation, and component testing.</li>
+                    <li>Collaboration with cross-functional teams for power qualification and thermal testing.</li>
+                </ul>
             </div>
+        </div>
+    </section>
 
-          </div><!-- .pet detials -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project">
+                <h3>Abandoned Object Detection</h3>
+                <p>Developed a MATLAB-based solution to detect stationary objects using image subtraction and blob analysis.</p>
+            </div>
+            <div class="project">
+                <h3>Urban Link and Coverage Analysis</h3>
+                <p>Used ray tracing techniques for analyzing links in non-line-of-sight conditions with 3D building data.</p>
+            </div>
+            <div class="project">
+                <h3>Farm-Bot Using ESP-32</h3>
+                <p>Designed a smart farm automation system using ESP-32 and Blynk for remote monitoring and control.</p>
+            </div>
+        </div>
+    </section>
 
-        </div><!-- profile -->
-        <div class ="booking column">
-          <h2>$30 <span class ="time">Per Day</span></h2>
-          <a href ="#" class = "button">Request a Book</a>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mangarajupalepu@gamil.com">mangarajupalepu@gmail.com</a></p>
+        <p>Location: Rajahmundry, Andhra Pradesh, India</p>
+    </section>
 
-        </div> <!-- .booling -->
-      </div> <!-- .container -->
-
-    </section>  <!-- .info -->
-
-    
-
-  </body>
-
-  </html>
+    <footer>
+        <p>© 2024 Palepu Mangaraju - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

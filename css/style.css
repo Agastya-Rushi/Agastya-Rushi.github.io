@@ -1,197 +1,94 @@
-/*
- * General/Utility Styles
-*/
-
+/* General Styles */
 * {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box; /* IE */
-}
-body{
-  margin: 0;
-  background: rgb(245, 245, 245);
-  font-family: 'Open Sans', arial, sans-serif;
-  font-size: 0.875rem;
-  color: rgb(86, 90, 92);
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.logo{
-  border-right: 1px solid black;
-  height: 85px;
-  width: 20%;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.hero img{
-  width:100%;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/*.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
-
-
-/*
-* Headings
-*/
-
-h1{
-  font-size: 22px;
-  color: #666A6C;
+.logo {
+    height: 60px;
 }
 
-
-
-.button {
-  background: rgb(255, 89, 95);
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  padding: 0.75rem 5rem;
-  border-bottom: 1px solid rgb(227, 25, 29);
-  border-radius: 2px;
-  width: 95%;
-  margin: 0 auto;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-/*
-* Info
-*/
-.info{
-  background: #FFF;
-  text-align: center;
-  padding: 25px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.info h1{
-  margin-bottom: 5px; 
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
 }
 
-.info .profile {
- margin-bottom: 24px;
+.hero-text h1 {
+    font-size: 3rem;
 }
 
-.info .owner-profile img{
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-bottom: 6px;
+.hero-text h2 {
+    font-size: 1.5rem;
 }
 
-.info h2.relationship, .info h2.name{
-  color: #909597;
-  margin-bottom:.1875rem;
-}
-.info h2.name{
-  font-weight: bold;
-}
-
-.clearfix:after {
- content: "";
- display: table;
- clear: both;
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
-.info .icons{
-  float: left;
-  width:  33.3%;
+section {
+    padding: 40px 20px;
 }
 
-.info .booking h2{
-  font-weight: 500;
-  font-size: 22px;
-  margin-bottom: 13px;
-}
-
-.info h2.price time {
- font-size: 16px;
-}
-
-.info .location{
-  margin-bottom: 20px;
-}
-
-.info .icons img{
-  height: 30px;
-  margin-bottom: 3px;
-}
-
-
-@media only screen and (min-width: 1060px) {
-
-
-  .container{
-    width: 1040px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-  }
-   .info h1 {
- margin-bottom: 11px;
- }
-
- .info h2 {
- margin-bottom: 3px;
- }
-
-  
-  .info .profile{
-    width: 660px;
-  }
-
-  .info .booking{
-    width: 380px;
-     border-right: 1px solid #DCE0E0;
-  }
-
-
-  .column{
-    float: left;
-  }
-
-  .info .owner-profile{
-    width: 20%;
-  }
- 
-  .info .pet-details{
-    width: 80%;
-    text-align: left;
-  }
-
-   .info .pet-details .icons {
-    width: inherit;
- 
- margin-right: 50px;
- }
-
- .info .pet-details .icons img {
- display: block;
- margin: 3px auto 3px;
- }
-  
-
-  
- 
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
+.job, .project {
+    margin-bottom: 20px;
+}
 
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
 
+.contact p {
+    font-size: 1.2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
 
