@@ -1,112 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Palepu Mangaraju, a hardware design engineer with expertise in EMI/EMC testing, PCB design, and hardware validation.">
-    <title>Palepu Mangaraju - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Palepu Mangaraju, a hardware design engineer with expertise in EMI/EMC testing, PCB design, and hardware validation." />
+  <title>Palepu Mangaraju - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet" />
 </head>
 <body>
+  <header>
+    <div class="container header-container">
+      <img src="images/logo.png" alt="Portfolio Logo" class="logo" />
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="learn.html">Learn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="Portfolio Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="learn.html">Learn</a></li>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Palepu Mangaraju</h1>
+      <h2>Hardware Design Engineer</h2>
+      <p>
+        I have accumulated 3+ years of experience in hardware design and validation, encompassing tasks such
+        as schematic entry, BOM generation, component selection, functional block development, and interface
+        knowledge. My proficiency in testing includes EMI/EMC, power qualification and thermal testing,
+        conducted in compliance with rigorous international standards. Additionally, I excel as a PCB designer,
+        with a command of tools like Allegro, managing projects seamlessly from inception to fruition. I also use
+        automation to make tasks faster and error less. Moreover, my adept communication and collaboration
+        abilities position me as a valuable contributor to any engineering team.
+      </p>
+    </div>
+    <img src="images/raju.png" alt="Palepu Mangaraju" class="hero-image" />
+  </section>
 
-                </ul>
-            </nav>
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      
+      <!-- Experience Content -->
+      <article class="experience-item">
+        <h3>Wipro Ltd. Bengaluru <span class="experience-dates">Feb 2022 - Present</span></h3>
+        <p class="experience-role"><strong>Hardware Design Engineer</strong></p>
+        <ul class="experience-list">
+          <li>Proficient in Cadence design tools, Autodesk Eagle, Proteus/Ltspice simulation, for schematic and design layout, including creating libraries with symbols and footprints.</li>
+          <li>Extensive experience with schematic entry and variant management.</li>
+          <li>Strong knowledge of commonly used interfaces (RS232, PCIe, UART, I2C, I2S, USB, CAN).</li>
+          <li>Expertise in developing, testing, and verifying analog and digital functional blocks (power supplies, MCU/SoC units) within complex hardware architectures.</li>
+          <li>Expertise in SI and PI Integrity, knowledge on Jitter and Phase Noise analysis.</li>
+          <li>Knowledge on PLM agile tool.</li>
+          <li>Create and perform test cases on newly added components and qualify by verifying its Signal Integrity, design verification, and validation.</li>
+          <li>Extensive knowledge and experience in analog/digital/power supply circuit designs and analysis.</li>
+          <li>Proven ability to independently manage testing setups and coordinate with external test labs.</li>
+          <li>Responsible for test planning and verifying EMC test specifications, procedures, and reports.</li>
+          <li>Working knowledge with Dedi Prog and Flash Pro for programming and debugging FPGAs.</li>
+          <li>Analyzed eye diagrams and jitters of SERDES lines for 1G/10G and 40G speeds.</li>
+          <li>Clear understanding of start-to-end manufacturing and PCB fabrication processes, ICT and FCT.</li>
+          <li>Experienced in communicating with test engineers to ensure availability of testing tools and receiving updates.</li>
+          <li>Conducted team meetings to discuss current and future project plans.</li>
+          <li>With Cross Functional Teams.</li>
+          <li>Proficient with EMI test receivers, spectrum analyzers, digital oscilloscopes, and signal generators. Expertise in test automation software - Rohde &amp; Schwarz EMC32 and TDK.</li>
+          <li>Fluke Meter/DMMS, Dedi Prog and Flash Pro.</li>
+          <li>Logic Analyzers - Saleae Logic 8 and Beagle (I2C &amp; SPI).</li>
+          <li>SSA-X Signal Source Analyzer E5055A (1MHz to 6GHz).</li>
+          <li>Tektronix RSA306 Real-Time Spectrum Analyzer - SignalVu.</li>
+          <li>Tektronix MSO4104B &amp; MS072304DX Mixed Signal Oscilloscope.</li>
+          <li>Venable 3120 Frequency Response Analyzer.</li>
+        </ul>
+      </article>
+
+      <!-- Additional Experience Details -->
+      <article class="experience-item">
+        <h3>As an EMI/EMC Test Engineer</h3>
+        <ul class="experience-list">
+          <li>Knowledge in component selection, such as MCUs, SDRAM, DDRs, and EEPROMs, based on application requirements.</li>
+          <li>Board Bring Up, Electronics component selection, BOM generation, power budget calculation, able to understand data sheet specifications and applications.</li>
+          <li>Hands-on experience conducting EMI/EMC testing (RE/RS/CE/CS, ESD, EFT) in compliance with CISPR, FCC, and IEC standards.</li>
+          <li>Knowledge in DO-254, MIL-STD-461, CE-101 &amp; 102.</li>
+          <li>Expertise in high-speed signals (switches and routers) EMI/EMC testing and debugging.</li>
+          <li>Skilled in identifying radiation sources by near-field probing.</li>
+          <li>Extensive knowledge and experience in analog/digital/power supply circuit designs and analysis.</li>
+          <li>Proven ability to independently manage testing setups and coordinate with external test labs.</li>
+          <li>Responsible for test planning and verifying EMC test specifications, procedures, and reports.</li>
+        </ul>
+      </article>
+
+      <!-- Personal Statement -->
+      <article class="experience-item personal-info">
+        <h3>Palepu Mangaraju</h3>
+        <p class="role-title">Hardware Design Engineer</p>
+        <p>
+          palelpumangaraju@gmail.com | +91 9703292062
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <article class="education-item">
+        <h3>Adikavi Nannayya University</h3>
+        <p>B.Tech in Electronics and Communication Engineering</p>
+        <p>GPA: 7.94</p>
+      </article>
+      <article class="education-item">
+        <h3>Aditya Junior College</h3>
+        <p>Intermediate Education in Maths, Physics and Chemistry</p>
+        <p>GPA: 9.8</p>
+      </article>
+      <article class="education-item">
+        <p>Rajahmundry 2017-2021</p>
+        <p>Rajahmundry 2015-2017</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <article class="project-item">
+        <h3>As a Student</h3>
+        <ul class="project-list">
+          <li>Led a team of 3 members for a final year project on abandoned object detection using MATLAB, successfully detecting stationary objects in various surroundings using image subtraction and blob analysis.</li>
+          <li>Completed a project on urban link and coverage analysis using ray tracing, involving importing and visualizing 3-D building data, defining a transmitter site, and analyzing a link in non-line-of-sight conditions.</li>
+          <li>Developed projects such as a Farm-Bot using ESP-32 and Blynk, a Ticket Vendor using RFID and ESP-32, and MSER text detection using MATLAB.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills and Strengths</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Allegro, Eagle, Easy EDA</li>
+            <li>Proteus, LTSpice</li>
+            <li>C/C++, Python, Embedded-C (Arduino)</li>
+            <li>Hands-on experience with communication protocols like I2C, SPI, and UART. Successfully interfaced LoRa, Bluetooth, WiFi, LCD, and many other sensors/modules with MCUs.</li>
+            <li>Experienced with development boards, including Arduino Uno, Nano, Mega, ESP32, ESP8266, Blue Pill, and Raspberry Pi</li>
+          </ul>
         </div>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Palepu Mangaraju</h1>
-            <h2>Hardware Design Engineer</h2>
-            <p>Specializing in schematic design, EMI/EMC testing, and PCB layout.</p>
+        <div class="skill-category">
+          <h3>Personal Strengths</h3>
+          <ul>
+            <li>Problem-solving</li>
+            <li>Creativity</li>
+            <li>Time Management</li>
+            <li>Eye for Detail</li>
+            <li>Patience, Never give up mentality</li>
+            <li>Workaholic</li>
+            <li>Fast Learner</li>
+            <li>Communication Skill</li>
+          </ul>
         </div>
-        <img src="images/raju.png" alt="Palepu Mangaraju">
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Wipro Ltd., Bengaluru (Feb 2022 - Present)</h3>
-                <p><strong>Hardware Design Engineer</strong></p>
-                <ul>
-                    <li>Proficient in schematic entry, BOM generation, and component selection.</li>
-                    <li>Conduct EMI/EMC testing per CISPR, FCC, and IEC standards.</li>
-                    <li>Expert in Cadence, Allegro, Eagle, Proteus, and LTSpice for PCB design and simulation.</li>
-                    <li>Worked on power budget calculation, functional block verification, and component qualification.</li>
-                    <li>Extensive collaboration with cross-functional teams for power qualification, thermal testing, and board bring-up.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>EMI/EMC Testing Engineer</h3>
-                <ul>
-                    <li>Experience with RE/RS/CE/CS, ESD, and EFT tests for electronic systems.</li>
-                    <li>Skilled in identifying radiation sources using near-field probing and debugging EMI issues in high-speed designs.</li>
-                    <li>Expert in Rohde & Schwarz EMC32, TDK automation software, and Tektronix MSO Oscilloscopes.</li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>Automation</h3>
+          <ul>
+            <li>Automated Serdes tuning using Python and PyVISA has cut down the work time from three weeks to just one day.</li>
+            <li>Logic analyzers are now debugged automatically.</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Abandoned Object Detection</h3>
-                <p>Developed a MATLAB-based detection system using image subtraction and blob analysis.</p>
-            </div>
-            <div class="project">
-                <h3>Urban Link and Coverage Analysis</h3>
-                <p>Performed urban link analysis using ray tracing for non-line-of-sight communication systems.</p>
-            </div>
-            <div class="project">
-                <h3>Farm-Bot using ESP-32</h3>
-                <p>Designed a farm automation bot using ESP-32 and Blynk for remote monitoring.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Personal Information / Declaration Section -->
+  <section id="personal" class="personal-info">
+    <div class="container">
+      <h2>Personal Information</h2>
+      <ul class="personal-list">
+        <li><strong>Father’s Name:</strong> Palepu Govindarajulu</li>
+        <li><strong>Mother’s Name:</strong> Palepu Ganga Bhavani</li>
+        <li><strong>DOB:</strong> 26-Aug-2000</li>
+        <li><strong>Gender:</strong> Male</li>
+        <li><strong>Country:</strong> India</li>
+        <li><strong>Languages:</strong> Telugu, English, Hindi</li>
+      </ul>
+      <div class="declaration">
+        <h3>Declaration</h3>
+        <p>
+          I hereby declare that the information provided in this resume is true and correct to the best of my knowledge and belief. I understand that any false information or misrepresentation will lead to disqualification and potential legal action.
+        </p>
+        <p class="declaration-signature">
+          <strong>Palepu Mangaraju</strong> <br />
+          21 - Feb - 2025
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Hardware Design: Cadence Allegro, Eagle, Proteus, LTSpice</li>
-                <li>Testing Tools: Tektronix MSO Oscilloscopes, Rohde & Schwarz EMC32</li>
-                <li>Programming: MATLAB, C/C++, Python, Embedded C (Arduino)</li>
-                <li>Standards: EMI/EMC Testing (CISPR, FCC, IEC), DO-254, MIL-STD-461</li>
-                <li>Communication Interfaces: RS232, PCIe, UART, I2C, I2S, USB, CAN</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in touch!</h2>
+      <p>Email: <a href="mailto:palelpumangaraju@gmail.com">palelpumangaraju@gmail.com</a></p>
+      <p>Phone: +91 9703292062</p>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:mangarajupalepu@gmail.com">mangarajupalepu@gmail.com</a></p>
-            <p>+91 9703292062</p>
-            <p>Location: Bengaluru, Karnataka, India</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2024 Palepu Mangaraju - All Rights Reserved</p>
-        </div>
-    </footer>
-
+  <footer>
+    <div class="container">
+      <p>© 2024 Palepu Mangaraju - All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
