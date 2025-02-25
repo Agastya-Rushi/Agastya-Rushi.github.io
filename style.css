@@ -1,63 +1,165 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease-in-out;
+/* Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Button Styling */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  transition: background 0.3s;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 150px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #f39c12;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  padding: 20px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Animation */
 .button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Styling */
-.card {
-    background: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+/* Card Hover Effect */
+.experience-item, .education-item, .project-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.experience-item:hover, .education-item:hover, .project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Fade In Animation */
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Keyframes for Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-/* Navbar Styling */
-.navbar {
-    background-color: #333;
-    padding: 10px;
-    color: white;
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .hero {
+    flex-direction: column;
     text-align: center;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.navbar:hover {
-    background-color: #555;
+  }
+  .skills .skills-grid {
+    flex-direction: column;
+  }
 }
